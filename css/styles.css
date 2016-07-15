@@ -42,7 +42,7 @@ body {
 .content {
     padding: 0 0.938rem;
     margin: 0 auto;
-    min-width: 37.5rem;
+    width: 70%
 }
 
 :focus {
@@ -132,15 +132,6 @@ ul {
     color: white;
     text-align: center;
     margin-top: 1.563rem;
-}
-
-.introduction .half {
-    width: 49%;
-    padding: 0 0.938rem;
-    display: inline-block;
-    vertical-align: bottom;
-    font-size: 1.125rem;
-    line-height: 1.2;
 }
 
 .cases {
@@ -263,7 +254,10 @@ place all the mobile tables styles bellow this line
     for example the statament above says: IF the media on which this CSS is going to used is SCREEN (Mobiles, Tables, Laptops, Desktops or Projectors) and the maximum resolution of that device is 1024px, THEN apply the body color blue for all the text
     */
     body {
-        color: blue;
+/*        color: blue;*/
+    }
+    .content {
+        width: 90%;
     }
 }
 
@@ -272,7 +266,25 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (max-width: 768px) {
     body {
-        color: red;
+/*        color: red;*/
+    }
+    .content {
+        width: 99%;
+    }
+    .cases {
+        padding-bottom: 0rem;
+    }
+    .cases .content {
+        margin-top: 1.5rem;
+    }
+    .top-navigation .links li {
+        margin-left: 0.5rem;
+    }
+    .introduction {
+        height: 25.938rem;
+    }
+    .introduction h1 {
+        margin-top: 8.5rem;
     }
 }
 
@@ -281,7 +293,24 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (max-width: 480px) {
     body {
-        color: green;
+/*        color: green;*/
+    }
+    .top-navigation .links li {
+        font-size: 0.75rem;
+    }
+    .introduction h1 {
+        margin-top: 7.5rem;
+        font-size: 2.125rem;
+    }
+    .cases h2 {
+        font-size: 1.8rem;
+    }
+    .cases .devices > li {
+        width: 99%;
+        float: none;
+    }
+    .cases .devices h3 {
+        font-size: 1.2rem;
     }
 }
 
@@ -290,6 +319,6 @@ place all the mobile tables styles bellow this line
 
 @media only screen and (max-width: 320px) {
     body {
-        color: purple;
+/*        color: purple;*/
     }
 }
